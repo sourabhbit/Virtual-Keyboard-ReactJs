@@ -1,13 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.ui-keyboard {
+  border-radius: 0;
+  left: 0;
+  top: auto;
+  position: fixed;
+  width: 100%;
+}
+
+.ui-keyboard-input {
+  text-align: left;
+  margin: 0 0 3px 0;
+  display: inline;
+  width: 75%;
+  height: 100px;
+  font-size: 25px;
+  padding: 10px 0px 10px 25px;
+}
+
+.keyboard_style {
+  margin-top: 50px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid black;
+  border-radius: 10%;
+  box-shadow: 5px 10px #56a5da;
+  font-size: 33px;
+  font-weight: bold;
+  color: #1c94c4;
+}
+
+.ui-keyboard-space:before {
+  content: "Space Bar";
+}
+
+.ui-keyboard-lock::before {
+  content: "Caps ";
+}
+
+.ui-keyboard-del:after {
+  content: "ete";
+}
+
+.ui-keyboard-clear:after {
+  content: "lear";
 }
